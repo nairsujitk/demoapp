@@ -31,5 +31,5 @@ resource null_resource "push_image" {
     docker tag ${aws_ecr_repository.repository.name} ${local.docker_image}
     docker push ${local.docker_image}
     BASH
-  }
+  }  
 }
